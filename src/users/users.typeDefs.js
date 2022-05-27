@@ -12,8 +12,4 @@ export default gql`
 		createdAt: String
 		updatedAt: String
 	}
-
-	type Query {
-		user: String
-	}
 `;
