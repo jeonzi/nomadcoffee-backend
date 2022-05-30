@@ -8,8 +8,14 @@ export default gql`
 		name: String!
 		location: String
 		avatarURL: String
+		following(lastId: Int): [User]
+		followers(lastId: Int): [User]
 		githubUsername: String
 		createdAt: String
 		updatedAt: String
+		totalFollowing: Int!
+		totalFollowers: Int!
+		isMe: Boolean!
+		isFollowing: Boolean!
 	}
 `;
